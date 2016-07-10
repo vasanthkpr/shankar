@@ -1,0 +1,22 @@
+#include<stdio.h>
+void tower(int ndisk,char supply,char extra,char stdy);
+int main()
+{
+char supply='A', extra='B',stdy='C';
+int ndisk;
+printf("enter the number of disks");
+scanf("%d",&n);
+printf("sequence is:/n");
+tower(ndisk,supply,extra,stdy);
+return 0;
+}
+void tower(int ndisk,char supply,char extra,char stdy);
+{
+if(ndisk==1)
+{
+printf("move disk %d from %c/n",ndisk,supply,stdy);
+return 0;
+tower(ndisk-1,supply,stdy,extra)
+printf("move disk %d from %c/n",ndisk,supply,stdy);
+tower(ndisk-1,extra,supply,stdy);
+}
